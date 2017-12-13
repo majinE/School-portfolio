@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>HCOM 211</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="if_checked-www-domain-window_532738.png" sizes="16x16">
+<link rel="icon" type="image/png" href="if_checked-www-domain-window_532738.png" sizes="32x32">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Human Communications</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a> -->
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="projects1.html">Project 1</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="projects2.html">Project 2</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="projects3.html">Project 3</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Project 3: GUN CONTROL: BAN ALL FIREARMS? </h1>
+      <p><h2><center>Reflection</h2></p>
+      <p><h2>Project 3 has been the most difficult paper I have had to write so far in my life. The required amount of writing was what I expected from a college course, but the amount of biased sources I had to work with was extremely challenging. I would find sources contradicting each other left and right; conservative blogs attacking liberal blogs and vice-versa on why one another was incorrect. I found myself using my own knowledge to make an estimate on the cost of some gun control law that Democrats have proposed. I discovered that my skills continued to expand; It was becoming easier to pinpoint all the information that was biased, skewed, or incorrect using several resources to validate my predictions. Making the website is by far the best part of the project. Incorporating some type of Computer Science into this project made it even easier to enjoy as it eased the headaches I would get from finding useful sources. </h2></p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-padding-large w3-padding-32 w3-center"><img src = "pencil-clip.png" alt="pencil clip art" style="width:180px;height:800px;"</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-hover-black" href="projects3.html">1</a>
+      <a class="w3-button w3-hover-black" href="projects3-2.html">2</a>
+      <a class="w3-button w3-hover-black" href="projects3-3.html">3</a>
+      <a class="w3-button w3-hover-black" href="projects3-4.html">4</a>
+      <a class="w3-button w3-hover-black" href="projects3-5.html">5</a>
+      <a class="w3-button w3-black" href="projects3-reflection.html">6</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
